@@ -1,22 +1,14 @@
 /* Polices */
 
-@font-face {
-    font-family: 'fonts/alata-regular';
-    src: url('fonts/alata-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body
 {
   background-color: #fbfaeb;
+  font-family: 'Alata';
 }
 
 main
 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
 }
 
 header
@@ -32,43 +24,42 @@ header
 #titre_site
 {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   font-size: 1.5em;
-  font-family: 'fonts/alata-regular';
   color: #4c575f;
 }
 
-#titre_site h1
+h1
 {
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 150px;
 }
 
-h2
+#portrait img
 {
-  font-family: 'fonts/alata-regular'
+  float: left;
+  margin-left: 20px;
 }
 
 nav ul
 {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 155px;
 }
 
 nav li
 {
-	font-family: 'fonts/alata-regular';
-  margin-right: 20px;
+  font-family: 'Alata';
   margin-left: 40px;
   margin-top: 30px;
 }
 
 nav a
 {
-	font-family: 'fonts/alata-regular';
+  font-family: 'Alata';
 	font-weight: bold;
-	list-style-type: none;
 	font-size: 1.8em;
 	color: #4c575f;
 	text-decoration: none;
@@ -77,36 +68,43 @@ nav a
 nav a:hover
 {
   color: #862019;
-  transform: rotate(45deg);
+  text-decoration: none;
+}
+
+.titresyl
+{
+  margin-top: 40px;
 }
 
 #portrait
 {
   display: flex;
-  flex-direction: row;
+  margin-top: 30px;
+}
+
+.histoiresyl
+{
+  clear: left;
+  font-family: 'Alata';
+  font-size: 1.1em;
+  margin-left: 20px;
+  text-align: justify;
 }
 
 h2
 {
   margin-left: 20px;
-  font-family: 'fonts/alata-regular';
+  font-family: 'Alata';
   font-weight: bold;
   font-size: 1.8em;
   color: #862019;
-}
-
-#portrait p
-{
-  font-family: 'fonts/alata-regular';
-  font-size: 1.2em;
-  margin-left: 20px;
-  text-align: justify;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h3
 {
-  margin-left: 20px;
-  font-family: 'fonts/alata-regular';
+  font-family: 'Alata';
   font-weight: bold;
   font-size: 1.5em;
   color: #4c575f;
@@ -117,19 +115,24 @@ img
   border: 2px solid #4c575f;
 }
 
-div p
+.column p
 {
   margin-left: 20px;
-  font-family: 'fonts/alata-regular';
+  font-family: 'Alata';
   font-size: 1.2em;
 }
 
 .row
 {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.column
+{
   text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
 footer
@@ -137,6 +140,7 @@ footer
 	display: flex;
 	background-color: #4c575f;
 	color: #fbfaeb;
+  margin-top: 40px;
 }
 
 footer h2
@@ -146,8 +150,13 @@ footer h2
 
 #contact
 {
-	width: 25%;
+	width: 40%;
 	margin-left: 20px;
+}
+
+#contact p
+{
+  margin-left: 20px;
 }
 
 #autourdenous
@@ -155,4 +164,9 @@ footer h2
   width: 50%
   margin-right: 2px;
   justify-content: baseline;
+}
+
+#autourdenous p
+{
+  margin-left: 20px;
 }
